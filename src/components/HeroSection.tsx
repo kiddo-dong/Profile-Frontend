@@ -12,6 +12,10 @@ export function HeroSection() {
     }
   }
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   const titleText = 'Hi, I\'m DongHyun' 
   const subtitleText = 'Backend Developer'
 
@@ -62,17 +66,17 @@ export function HeroSection() {
 
   return (
     <section className="h-screen flex items-center justify-center relative sticky top-0 z-10">
-      <div className="flex items-center justify-between max-w-6xl mx-auto px-6 w-full">
+            <div className="flex items-center justify-between max-w-6xl mx-auto px-6 w-full">
         <motion.div 
           className="flex-shrink-0"
           animate={{ y: [0, -20, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         >
-          <img
-            src="/images/hi-dong.png"
-            alt="Profile"
-            className="w-auto h-auto object-contain"
-          />
+                                            <img
+               src="/images/hi-dong.png"
+               alt="Profile"
+               className="w-auto h-auto object-contain"
+             />
         </motion.div>
         <div className="text-center flex-1">
           <motion.div

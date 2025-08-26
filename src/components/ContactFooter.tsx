@@ -7,13 +7,13 @@ export function ContactFooter() {
   const contactInfo = [
     {
       icon: <User className="w-10 h-10" />,
-      label: "이름",
+      label: "Name",
       value: "최동현",
       href: null
     },
     {
       icon: <Mail className="w-10 h-10" />,
-      label: "이메일",
+      label: "E-mail",
       value: "dh655933@gmail.com",
       href: "https://gmail.com"
     },
@@ -25,7 +25,7 @@ export function ContactFooter() {
     },
     {
       icon: <ExternalLink className="w-10 h-10" />,
-      label: "티스토리",
+      label: "Tistory",
       value: "Hyundong.tistory.com",
       href: "https://Hyundong.tistory.com"
     }
