@@ -71,37 +71,22 @@ export function Header() {
       className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border"
     >
       <nav className="max-w-7xl mx-auto px-8 py-6">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center h-16 md:h-20">
           <motion.div 
             className="flex items-center gap-3"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="relative"
+            <div
+              className="relative pl-4"
             >
-              <img
-                src="https://images.unsplash.com/photo-1576558656222-ba66febe3dec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDF8fHx8MTc1NjE0MzgxM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Choi Profile"
-                className="w-12 h-12 rounded-full object-cover border-2 border-chart-4 shadow-lg"
-              />
-              <motion.div
-                className="absolute -bottom-1 -right-1 w-4 h-4 bg-chart-4 rounded-full border-2 border-background"
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              />
-            </motion.div>
-            <motion.span 
-              className="text-4xl md:text-5xl lg:text-6xl font-medium text-chart-4"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              Choi
-            </motion.span>
+                <img
+                  src="/images/My-icon.png"
+                  className="h-12 w-auto object-contain shrink-0"
+                />
+            </div>
+            
           </motion.div>
           
           <div className="flex gap-8 md:gap-12">

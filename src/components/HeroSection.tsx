@@ -62,17 +62,26 @@ export function HeroSection() {
 
   return (
     <section className="h-screen flex items-center justify-center relative sticky top-0 z-10">
-      <div className="text-center max-w-4xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+      <div className="flex items-center justify-between max-w-6xl mx-auto px-6 w-full">
+        <motion.div 
+          className="flex-shrink-0"
+          animate={{ y: [0, -20, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         >
+          <img
+            src="/images/hi-dong.png"
+            alt="Profile"
+            className="w-auto h-auto object-contain"
+          />
+        </motion.div>
+        <div className="text-center flex-1">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+          >
           <h1 className="text-6xl md:text-7xl lg:text-8xl mb-6 tracking-tight">
             {typedTitle}
-            {isTypingTitle && (
-              <span className="inline-block w-[1ch] animate-caret-blink">|</span>
-            )}
           </h1>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -81,9 +90,7 @@ export function HeroSection() {
             className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground mb-8 whitespace-pre-line"
           >
             {typedSubtitle}
-            {isTypingSubtitle && (
-              <span className="inline-block w-[1ch] animate-caret-blink">|</span>
-            )}
+            <span className="inline-block w-[1ch] animate-caret-blink">|</span>
           </motion.h2>
           {/*
           부가적 내용 추가(할까말까??)
@@ -97,7 +104,8 @@ export function HeroSection() {
             확장 가능하고 안정적인 시스템을 구축하는 것을 목표로 합니다.
           </motion.p>
           */}
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
       
       <motion.button
