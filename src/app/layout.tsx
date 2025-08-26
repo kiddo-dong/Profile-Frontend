@@ -12,6 +12,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" suppressHydrationWarning>
+      <head>
+        <title>DongHyun</title>
+        <link rel="icon" type="image/png" href="/images/My-icon.png" />
+        <meta name="description" content="DongHyun portfolio website" />
+      </head>
       <body>
         {/* 스크롤을 항상 맨 위로 올리기 */}
         <script
