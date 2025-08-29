@@ -8,7 +8,7 @@ export function AboutSection() {
     {
       icon: <Server className="w-8 h-8" />,
       title: "Backend Development",
-      description: "Java, Spring Boot, Node.js를 활용한 서버 개발"
+      description: "Spring Boot, JPA, ORM, MySql 서버 개발"
     },
     {
       icon: <Database className="w-8 h-8" />,

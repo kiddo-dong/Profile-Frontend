@@ -7,7 +7,7 @@ export function WorkSection() {
   const projects = [
     {
       title: "Spring-Framework",
-      description: "Spring Boot 및 JPA, 배포 환경 공부 중",
+      description: "Spring Boot 및 JPA, 배포 환경",
       tech: ["Spring Boot", "JPA", "MySQL", "Redis", "AWS"],
       github: "https://github.com/kiddo-dong/Spring-Framework-anatomy",
       demo: "#",
@@ -19,7 +19,7 @@ export function WorkSection() {
       tech: ["Node.js", "Socket.io", "MongoDB", "Docker"],
       github: "#",
       demo: "#",
-      image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=400&fit=crop"
+      image: ""
     },
     {
       title: "마이크로서비스 아키텍처",
@@ -27,7 +27,7 @@ export function WorkSection() {
       tech: ["Spring Cloud", "Docker", "Kubernetes", "PostgreSQL"],
       github: "#",
       demo: "#",
-      image: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=600&h=400&fit=crop"
+      image: ""
     }
   ]
 
