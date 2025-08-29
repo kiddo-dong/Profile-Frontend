@@ -14,8 +14,8 @@ export function WorkSection() {
       image: "/images/Spring-boot.jpg"
     },
     {
-      title: "실시간 채팅 서버",
-      description: "WebSocket을 활용한 실시간 채팅 시스템. 메시지 저장, 사용자 인증, 채팅방 관리 기능을 포함하며 확장 가능한 아키텍처로 설계.",
+      title: "Project",
+      description: "preparing...",
       tech: ["Node.js", "Socket.io", "MongoDB", "Docker"],
       github: "#",
       demo: "#",
@@ -23,7 +23,7 @@ export function WorkSection() {
     },
     {
       title: "마이크로서비스 아키텍처",
-      description: "Docker와 Kubernetes를 활용한 마이크로서비스 기반 블로그 플랫폼. API Gateway, 서비스 디스커버리, 분산 데이터베이스 설계.",
+      description: "Docker와 Kubernetes를 활용한 마이크로서비스 기반 플랫폼. API Gateway, 서비스 디스커버리, 분산 데이터베이스 설계.",
       tech: ["Spring Cloud", "Docker", "Kubernetes", "PostgreSQL"],
       github: "#",
       demo: "#",
