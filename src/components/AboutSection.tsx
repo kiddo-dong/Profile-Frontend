@@ -39,13 +39,6 @@ export function AboutSection() {
             className="text-center mb-20"
           >
             <h2 className="text-6xl md:text-7xl lg:text-8xl mb-6">About.</h2>
-            {/*
-            내용 넣고싶으면 주석 해제 할까??
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              새로운 기술에 대한 호기심과 문제 해결에 대한 열정을 바탕으로
-              백엔드를 개발합니다.
-            </p>
-            */}
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

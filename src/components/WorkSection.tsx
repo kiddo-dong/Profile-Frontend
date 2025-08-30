@@ -11,7 +11,7 @@ export function WorkSection() {
       tech: ["Spring Boot", "JPA", "MySQL", "Redis", "AWS"],
       github: "https://github.com/kiddo-dong/Spring-Framework-anatomy",
       demo: "#",
-      image: "/images/Spring-boot.jpg"
+      image: "/images/work/Spring-boot.jpg"
     },
     {
       title: "Project",
@@ -19,7 +19,7 @@ export function WorkSection() {
       tech: ["Node.js", "Socket.io", "MongoDB", "Docker"],
       github: "#",
       demo: "#",
-      image: ""
+      image: "/images/default.jpg"
     },
     {
       title: "마이크로서비스 아키텍처",
@@ -27,7 +27,7 @@ export function WorkSection() {
       tech: ["Spring Cloud", "Docker", "Kubernetes", "PostgreSQL"],
       github: "#",
       demo: "#",
-      image: ""
+      image: "/images/default.jpg"
     }
   ]
 
@@ -43,13 +43,6 @@ export function WorkSection() {
             className="text-center mb-20"
           >
             <h2 className="text-6xl md:text-7xl lg:text-8xl mb-6">Work.</h2>
-            {/*
-            내용 추가 하고 싶으면 주석 해제 할까??
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              개발한 프로젝트
-              다양한 토이 프로젝트 및 사이드 프로젝트
-            </p>
-            */}
           </motion.div>
 
           <div className="space-y-32">
