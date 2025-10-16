@@ -14,9 +14,9 @@ export function WorkSection() {
       image: "/images/work/Spring-boot.jpg"
     },
     {
-      title: "Project",
-      description: "preparing...",
-      tech: ["Node.js", "Socket.io", "MongoDB", "Docker"],
+      title: "세모(세상의 모든 이야기)",
+      description: "AI비서를 이용한 작가가 될 수 있는 웹/앱 서비스. Spring boot, JPA, AWS를 활용한 배포 환경 구축.",
+      tech: ["next.js", "Spring Boot", "MySQL", "MongoDB", "OpenAI", "AWS"],
       github: "#",
       demo: "#",
       image: "/images/default.jpg"

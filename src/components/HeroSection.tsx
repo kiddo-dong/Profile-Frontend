@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
-import { ChevronDown } from 'lucide-react'
+import { ChevronUp } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 export function HeroSection() {
@@ -10,10 +10,6 @@ export function HeroSection() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
-  }
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   const titleText = 'Hi, I\'m DongHyun' 
@@ -96,18 +92,6 @@ export function HeroSection() {
             {typedSubtitle}
             <span className="inline-block w-[1ch] animate-caret-blink">|</span>
           </motion.h2>
-          {/*
-          부가적 내용 추가(할까말까??)
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
-          >
-            서버 아키텍처 설계와 API 개발에 열정을 가지고 있는 주니어 개발자입니다. 
-            확장 가능하고 안정적인 시스템을 구축하는 것을 목표로 합니다.
-          </motion.p>
-          */}
           </motion.div>
         </div>
       </div>
@@ -120,10 +104,10 @@ export function HeroSection() {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 p-2 rounded-full hover:bg-chart-4/10 border border-chart-4/20 transition-colors duration-300"
       >
         <motion.div
-          animate={{ y: [0, 8, 0] }}
+          animate={{ y: [0, -8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
-          <ChevronDown className="w-6 h-6 text-chart-4" />
+          <ChevronUp className="w-6 h-6 text-chart-4" />
         </motion.div>
       </motion.button>
     </section>
