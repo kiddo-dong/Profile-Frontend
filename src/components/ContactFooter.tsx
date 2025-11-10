@@ -27,7 +27,7 @@ export function ContactFooter() {
       icon: <ExternalLink className="w-10 h-10" />,
       label: "Tistory",
       value: "Hyundong.tistory.com",
-      href: "https://Hyundong.tistory.com"
+      href: "https://github.com/kiddo-dong"
     }
   ]
 
