@@ -6,20 +6,20 @@ import { ExternalLink, Github } from 'lucide-react'
 export function WorkSection() {
   const projects = [
     {
+      title: "Angler",
+      description: "이미지(스크린샷, 캡쳐 등)로 받은 메시지를 분석해 피싱 의심 여부와 신뢰도를 반환하는 분석 서비스",
+      tech: ["next.js", "Spring Boot", "MySQL", "OpenAI", "AWS"],
+      github: "https://github.com/kiddo-dong/Angler",
+      demo: "#",
+      image: "/images/default.jpg"
+    },
+    {
       title: "Spring-Framework",
       description: "Spring Boot 및 JPA, 배포 환경",
       tech: ["Spring Boot", "JPA", "MySQL", "Redis", "AWS"],
       github: "https://github.com/kiddo-dong/Spring-Framework-anatomy",
       demo: "#",
       image: "/images/work/Spring-boot.jpg"
-    },
-    {
-      title: "세모(세상의 모든 이야기)",
-      description: "AI비서를 이용한 작가가 될 수 있는 웹/앱 서비스. Spring boot, JPA, AWS를 활용한 배포 환경 구축.",
-      tech: ["next.js", "Spring Boot", "MySQL", "MongoDB", "OpenAI", "AWS"],
-      github: "#",
-      demo: "#",
-      image: "/images/default.jpg"
     },
     {
       title: "마이크로서비스 아키텍처",
