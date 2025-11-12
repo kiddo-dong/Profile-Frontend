@@ -10,8 +10,8 @@ export function WorkSection() {
       description: "이미지(스크린샷, 캡쳐 등)로 받은 메시지를 분석해 피싱 의심 여부와 신뢰도를 반환하는 분석 서비스",
       tech: ["next.js", "Spring Boot", "MySQL", "OpenAI", "AWS"],
       github: "https://github.com/kiddo-dong/Angler",
-      demo: "#",
-      image: "/images/default.jpg"
+      demo: "https://kiddo-dong.github.io/Angler-Front/",
+      image: "/images/project_icons/angler.png"
     },
     {
       title: "Spring-Framework",

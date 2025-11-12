@@ -74,8 +74,7 @@ export function AboutSection() {
               {[
                 "Java", "Spring Boot", "Node.js", "Python",
                 "MySQL", "PostgreSQL", "Redis", "MongoDB",
-                "AWS", "Docker", "Kubernetes", "Jenkins",
-                "Git", "Linux", "RESTful API", "GraphQL"
+                "AWS", "Docker", "Git", "Linux"
               ].map((tech, index) => (
                 <motion.div
                   key={tech}
