@@ -7,7 +7,7 @@ import { ContactFooter } from '@/components/ContactFooter'
 
 export default function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
+    <ThemeProvider defaultTheme="light" storageKey="portfolio-theme">
       <div className="min-h-screen bg-background text-foreground">
         <Header />
         <main>
