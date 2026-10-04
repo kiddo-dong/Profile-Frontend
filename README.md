@@ -32,11 +32,11 @@
 | 섹션 | 내용 |
 |---|---|
 | **Hero** | 타이핑 애니메이션 인사말과 프로필 일러스트 |
-| **About.** | Backend · Database · Cloud & DevOps · API Design 역량과 보유 기술 |
-| **Work.** | 대표 프로젝트 소개 · GitHub / Live Demo 링크 |
+| **About.** | Backend · Database · AI / RAG · Cloud & Infra 역량과 보유 기술 |
+| **Work.** | 대표 프로젝트의 기간 · 역할 · 기술적 하이라이트 · GitHub / Live Demo / 아키텍처 링크 |
 | **Contact.** | 이메일 · GitHub |
 
-라이트 / 다크 테마를 지원하며 기본값은 라이트 테마입니다.
+흑백·회색 톤으로 통일한 라이트 / 다크 테마를 지원하며, 기본값은 라이트 테마입니다.
 
 ---
 

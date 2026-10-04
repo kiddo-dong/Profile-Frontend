@@ -27,16 +27,16 @@ export function ContactFooter() {
 
   return (
     <footer id="contact" className="relative z-20 bg-background">
-      <div className="py-32 px-6 min-h-screen flex flex-col justify-center">
-        <div className="max-w-6xl mx-auto">
+      <div className="py-24 md:py-32 px-6 min-h-screen flex flex-col justify-center">
+        <div className="max-w-6xl mx-auto w-full">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="text-center mb-20"
+            className="text-center mb-16 md:mb-20"
           >
-            <h2 className="text-6xl md:text-7xl lg:text-8xl mb-6">Contact.</h2>
+            <h2 className="text-5xl md:text-7xl lg:text-8xl mb-6">Contact.</h2>
           </motion.div>
 
           <motion.div
@@ -44,7 +44,7 @@ export function ContactFooter() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12"
+            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8"
           >
             {contactInfo.map((item, index) => (
               <motion.div
@@ -62,23 +62,23 @@ export function ContactFooter() {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="block p-20 md:p-24 min-h-[420px] md:min-h-[500px] rounded-2xl bg-card border border-border hover:border-chart-4/50 transition-all duration-300 hover:shadow-lg"
+                    className="block p-8 md:p-12 min-h-[220px] md:min-h-[320px] rounded-2xl bg-card border border-border hover:border-foreground/50 transition-all duration-300 hover:shadow-lg"
                   >
-                    <div className="text-chart-4 mb-8 group-hover:scale-110 transition-transform duration-300">
+                    <div className="mb-8 group-hover:scale-110 transition-transform duration-300">
                       {item.icon}
                     </div>
-                    <h3 className="text-3xl md:text-4xl mb-4 text-muted-foreground">{item.label}</h3>
-                    <p className="text-3xl md:text-4xl break-words group-hover:text-chart-4 transition-colors duration-300">
+                    <h3 className="text-2xl md:text-3xl mb-3 text-muted-foreground">{item.label}</h3>
+                    <p className="text-xl md:text-2xl break-words">
                       {item.value}
                     </p>
                   </motion.a>
                 ) : (
-                  <div className="p-20 md:p-24 min-h-[420px] md:min-h-[500px] rounded-2xl bg-card border border-border">
-                    <div className="text-chart-4 mb-8">
+                  <div className="p-8 md:p-12 min-h-[220px] md:min-h-[320px] rounded-2xl bg-card border border-border">
+                    <div className="mb-8">
                       {item.icon}
                     </div>
-                    <h3 className="text-3xl md:text-4xl mb-4 text-muted-foreground">{item.label}</h3>
-                    <p className="text-3xl md:text-4xl break-words">{item.value}</p>
+                    <h3 className="text-2xl md:text-3xl mb-3 text-muted-foreground">{item.label}</h3>
+                    <p className="text-xl md:text-2xl break-words">{item.value}</p>
                   </div>
                 )}
               </motion.div>

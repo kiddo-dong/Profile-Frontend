@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { motion } from 'motion/react'
 import { useState, useEffect } from 'react'
 import { Moon, Sun } from 'lucide-react'
@@ -70,33 +71,35 @@ export function Header() {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border"
     >
-      <nav className="max-w-7xl mx-auto px-8 py-6">
-        <div className="flex justify-between items-center h-16 md:h-20">
+      <nav className="max-w-7xl mx-auto px-4 md:px-8 py-3 md:py-6">
+        <div className="flex justify-between items-center h-12 md:h-20">
           <motion.div 
             className="flex items-center gap-3"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div
-              className="relative pl-4"
-            >
-                <img
-                  src="/images/My-icon.png"
-                  className="h-12 w-auto object-contain shrink-0"
-                />
+            <div className="relative md:pl-4">
+              <Image
+                src="/images/My-icon.png"
+                alt="DongHyun"
+                width={480}
+                height={351}
+                priority
+                className="h-8 md:h-12 w-auto object-contain shrink-0"
+              />
             </div>
             
           </motion.div>
           
-          <div className="flex gap-8 md:gap-12">
+          <div className="flex gap-1 md:gap-12">
             {navigationItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`relative px-6 py-3 rounded-full text-2xl md:text-3xl transition-all duration-300 ${
+                className={`relative px-3 py-1.5 md:px-6 md:py-3 rounded-full text-base md:text-3xl transition-all duration-300 ${
                   activeSection === item.id 
-                    ? 'text-chart-4' 
+                    ? 'text-foreground' 
                     : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
@@ -104,7 +107,7 @@ export function Header() {
                 {activeSection === item.id && (
                   <motion.div
                     layoutId="activeSection"
-                    className="absolute inset-0 bg-chart-4/10 border border-chart-4/20 rounded-full"
+                    className="absolute inset-0 bg-foreground/5 border border-foreground/15 rounded-full"
                     style={{ zIndex: -1 }}
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
@@ -117,7 +120,8 @@ export function Header() {
             onClick={toggleTheme}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="p-3 rounded-full hover:bg-secondary transition-colors duration-300"
+            aria-label="테마 전환"
+            className="p-2 md:p-3 rounded-full hover:bg-secondary transition-colors duration-300"
           >
             <motion.div
               initial={false}
