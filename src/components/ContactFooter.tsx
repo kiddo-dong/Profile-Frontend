@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
-import { Github, Mail, ExternalLink, User } from 'lucide-react'
+import { Github, Mail, User } from 'lucide-react'
 
 export function ContactFooter() {
   const contactInfo = [
@@ -15,18 +15,12 @@ export function ContactFooter() {
       icon: <Mail className="w-10 h-10" />,
       label: "E-mail",
       value: "dh655933@gmail.com",
-      href: "https://gmail.com"
+      href: "mailto:dh655933@gmail.com"
     },
     {
       icon: <Github className="w-10 h-10" />,
       label: "GitHub",
       value: "github.com/kiddo-dong",
-      href: "https://github.com/kiddo-dong"
-    },
-    {
-      icon: <ExternalLink className="w-10 h-10" />,
-      label: "Tistory",
-      value: "Hyundong.tistory.com",
       href: "https://github.com/kiddo-dong"
     }
   ]
@@ -50,7 +44,7 @@ export function ContactFooter() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12"
+            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12"
           >
             {contactInfo.map((item, index) => (
               <motion.div
