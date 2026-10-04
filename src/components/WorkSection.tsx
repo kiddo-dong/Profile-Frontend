@@ -6,28 +6,20 @@ import { ExternalLink, Github } from 'lucide-react'
 export function WorkSection() {
   const projects = [
     {
-      title: "Angler",
-      description: "이미지(스크린샷, 캡쳐 등)로 받은 메시지를 분석해 피싱 의심 여부와 신뢰도를 반환하는 분석 서비스",
-      tech: ["next.js", "Spring Boot", "MySQL", "OpenAI", "AWS"],
-      github: "https://github.com/kiddo-dong/Angler",
-      demo: "https://kiddo-dong.github.io/Angler-Front/",
-      image: "/images/project_icons/angler.png"
+      title: "ToTheWork",
+      description: "자영업자를 위한 매장 및 인력 관리 서비스. 주휴·연장·야간·휴일 가산수당, 연소자 보호, 5인 미만 사업장 특례, 4대보험·소득세 공제까지 스케줄을 짜는 시점에 서버가 자동으로 계산합니다.",
+      tech: ["Spring Boot", "Spring AI", "MySQL", "pgvector"],
+      github: "https://github.com/kiddo-dong/tothework",
+      demo: "https://tothework.com",
+      image: "/images/project_icons/tothework.png"
     },
     {
-      title: "Spring-Framework",
-      description: "Spring Boot 및 JPA, 배포 환경",
-      tech: ["Spring Boot", "JPA", "MySQL", "Redis", "AWS"],
-      github: "https://github.com/kiddo-dong/Spring-Framework-anatomy",
-      demo: "#",
-      image: "/images/work/Spring-boot.jpg"
-    },
-    {
-      title: "마이크로서비스 아키텍처",
-      description: "Docker와 Kubernetes를 활용한 마이크로서비스 기반 플랫폼. API Gateway, 서비스 디스커버리, 분산 데이터베이스 설계.",
-      tech: ["Spring Cloud", "Docker", "Kubernetes", "PostgreSQL"],
-      github: "#",
-      demo: "#",
-      image: "/images/default.jpg"
+      title: "실:온 (Sil:On)",
+      description: "치매 진단 전후 가족 보호자를 위한 재가 돌봄 정보·기록 플랫폼. 메모리북, 가족 돌봄 캘린더, 커뮤니티, AI 돌봄도감(시온이), 케어 기록을 하나의 구조 안에서 제공합니다.",
+      tech: ["Flutter", "Spring Boot", "Spring AI", "MySQL", "pgvector", "FCM", "AWS S3"],
+      github: "https://github.com/kiddo-dong/Sil-On-BackEnd",
+      demo: null,
+      image: "/images/project_icons/sil-on.png"
     }
   ]
 
@@ -101,17 +93,19 @@ export function WorkSection() {
                       <Github className="w-5 h-5" />
                       GitHub
                     </motion.a>
-                    <motion.a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="flex items-center gap-2 px-6 py-3 border border-chart-4 text-chart-4 rounded-full hover:bg-chart-4/10 transition-colors duration-200"
-                    >
-                      <ExternalLink className="w-5 h-5" />
-                      Live Demo
-                    </motion.a>
+                    {project.demo && (
+                      <motion.a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex items-center gap-2 px-6 py-3 border border-chart-4 text-chart-4 rounded-full hover:bg-chart-4/10 transition-colors duration-200"
+                      >
+                        <ExternalLink className="w-5 h-5" />
+                        Live Demo
+                      </motion.a>
+                    )}
                   </div>
                 </div>
               </motion.div>
